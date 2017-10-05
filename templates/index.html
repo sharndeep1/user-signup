@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        form{
+            background-color: #eee;
+            padding: 20px;
+            margin: 0 auto;
+            width:400px;
+            font: 16px sans-serif;
+            border-radius: 10px;
+    height:auto;float:left;
+        }
+h4{margin:0px;}
+label{width:45%;float:left;}
+input{width:50%;float:left;}
+div{width:350px;margin:auto;}	
+.error { color: red; }
+   
+    </style>
+</head>
+<body>
+<div>
+    <form  method="post">
+<h4 align="center">Signup Form</h4>	 
+     
+<label for='username'>User Name</label>
+      <input type='text' name='username' value='{{username}}'>
+    <p class="error">{{user_error}}</p>
+     <label for='password'>Password</label>
+    <input type='password' name='password'>
+      <p class="error">{{password_error}}</p>
+    <label for='verify'>Verify Password</label>
+     <input type='password' name='verify'>
+    <p class="error">{{verify_error}}</p>			 
+  <label for='email'>Email(optional)</label>
+ <input type='text' name='email' value='{{email}}'>
+<p class="error">{{email_error}}</p>
+ <input type='submit' value='submit'>
+      
+</form>
+</div>	
+</body> 
+</html>
